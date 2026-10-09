@@ -23,7 +23,7 @@ Visit `http://localhost:8000`. Save changes and refresh. Stop the server with Co
 
 | Website section | Authoritative source |
 | --- | --- |
-| Home, title, location, remote interest | Latest approved website brief supplied by Arta |
+| Home, title, location | Approved website brief; availability wording removed at Arta’s request |
 | About | Previously supplied CV career history; ISA role omitted at owner request |
 | Expertise | Previously supplied CV and Arta's explicit confirmation of Java, Databricks, and AWS use |
 | Raiffeisen experience | Supplied CV and subsequent technology clarification; title and dates retained |
@@ -33,9 +33,9 @@ Visit `http://localhost:8000`. Save changes and refresh. Stop the server with Co
 | Personal Portfolio Website | This repository's actual HTML/CSS implementation |
 | Certifications & learning | Arta’s supplied credential text: six exact titles, issuers, issue/completion dates; Databricks Associate expiration and Lakehouse no-expiry statement; four personal credential URLs |
 | Education | Latest approved brief |
-| Contact | Latest brief's email, LinkedIn URL, location, and remote-work interest |
+| Contact | Approved email, LinkedIn URL, and location; job-search wording removed at Arta’s request |
 
-The latest brief supplies updated dates and titles. Website copy uses direct first-person descriptions; punctuation changes do not change the roles or dates. Role interests are presented as interests, not past job titles or product-roadmap ownership. No invented metrics, certifications, testimonials, project screenshots, or publication links are included.
+The latest brief supplies updated dates and titles. Website copy uses direct first-person descriptions; punctuation changes do not change the roles or dates. The page presents Arta’s background without job-search or remote-work availability wording. No invented metrics, certifications, testimonials, project screenshots, or publication links are included.
 
 ## Missing source materials
 
@@ -85,3 +85,5 @@ ISA Consulting was removed from Professional Experience and About at the owner�
 ## Supplied credentials
 
 Added six credential records and a Certifications navigation link. Certifications, accreditation, and course completions are labeled separately. Databricks Data Engineer Associate is explicitly expired on April 13, 2025; no renewal is assumed. Lakehouse Fundamentals is marked as not expiring, as supplied. Microsoft expiration dates were not supplied and are omitted. No new employment skills are inferred from exam descriptions. Four supplied personal credential links are used; no Microsoft verification URLs or preview images were invented. Browser retrieval of the four credential pages failed, so their contents have not been independently verified. All record details are supported by the owner’s pasted credential content.
+
+Removed remote-work availability and job-search statements from Home, the sidebar, About, and Contact at Arta’s request. About now closes with existing teaching and troubleshooting experience. Contact offers email, LinkedIn, and GitHub without recruiting language.
