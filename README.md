@@ -1,37 +1,42 @@
-# Arta Abdullahu — Personal portfolio
+# Arta Abdullahu — Data Engineer
 
-A simple personal website built with HTML and CSS. No framework, JavaScript, dependencies, or build step is needed.
+A professional portfolio built with HTML and CSS. No JavaScript, dependencies, or build step is required.
 
 ## Files
 
-- `dist/index.html` — introduction, About, Projects, and contact sections.
-- `dist/styles.css` — colors, typography, layout, and responsive styles.
-- `archive/index-original.html` — the original NGO services draft, preserved before the portfolio changes. Outside the deployable `dist` folder.
+- `dist/index.html` — introduction, skills, selected experience, public repositories, and contact links.
+- `dist/styles.css` — responsive layout, typography, and navy/mint palette.
+- `archive/index-original.html` — the original NGO services draft.
+- `archive/portfolio-v1/` — the previous personal portfolio, including its stylesheet.
 
-## Preview
+## Local preview
 
-Open `dist/index.html` in a browser. Save changes in your editor and refresh the browser to see them.
-
-Or run this from the project folder:
+Open `dist/index.html` directly in a browser, or run from the project folder:
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
 ```
 
-Visit `http://localhost:8000`. Press Control+C in the terminal to stop the server. VS Code's Live Server extension is also optional.
+Visit `http://localhost:8000`. Save edits and refresh the browser. Press Control+C in the server terminal to stop it.
 
-## Make it yours
+## Content and sources
 
-1. Edit the introduction and About text in `dist/index.html`.
-2. Add real projects by copying the project `<article>` and updating its title, description, and link.
-3. The contact section links to your GitHub profile. Add an email or another contact link when ready.
-4. Edit the colors at the top of `dist/styles.css` and the other styles below them.
-5. Update the copyright year in the footer when needed.
+The owner’s supplied CV is the source of truth for employment dates, employer names, responsibilities, education, and research. The site prioritizes data engineering and excludes customer support positioning. Contact uses the email and LinkedIn profile supplied by the owner. Earlier research on the public XING profile was superseded by the supplied CV.
 
-## GitHub and publishing
+Featured projects cover photovoltaic sensor data with Raspberry Pi/Cassandra and Kosovo business data analysis. Additional conference work appears in an expandable section. No performance metrics or project repository links have been invented.
 
-The configured Git remote is `https://github.com/artaabdullahu/arta-abdullahu-website.git`.
+Public repositories were checked through GitHub's public API and their source files on October 9, 2026:
 
-The working folder replaces the original tracked root `index.html` and empty file named `dist` with a real `dist/` directory. Before committing, review `git status` and `git diff`. Stage the new files and those removals together to record this layout.
+- [flask-test](https://github.com/artaabdullahu/flask-test): Python/Flask routing experiment with a welcome template.
+- [kreotive](https://github.com/artaabdullahu/kreotive): a fork of a Flask application framework with MongoDB integration. It is labeled as a fork.
+- [arkep](https://github.com/artaabdullahu/arkep): a Jekyll Modern Blog theme repository. The page acknowledges its template origin.
 
-The website is ready for local preview. This checkout contains no hosting configuration, and this update does not publish the website. Deploy the contents of `dist/` when you choose a static hosting service.
+Empty and introductory repositories are excluded from the selected projects. The project illustrations and lifecycle diagram are made in HTML/CSS; they are not screenshots of deployed applications or an employer's architecture.
+
+## Personalize
+
+Keep experience dates and responsibilities up to date in `dist/index.html`. Add a project by copying a project article and replacing its description, technologies, and repository link with verified information. Contact links use email, LinkedIn, and GitHub.
+
+## Publishing
+
+Deploy only `dist/`. The archive is outside that folder. The repository remote is `https://github.com/artaabdullahu/arta-abdullahu-website.git`; pushing code does not automatically publish the website. This checkout has no hosting configuration.
