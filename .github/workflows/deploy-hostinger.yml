@@ -27,5 +27,15 @@ jobs:
         run: python3 scripts/deploy_hostinger.py
       - name: Check public website
         run: |
-          curl --fail --silent --show-error --retry 3 https://artaabdullahu.com/ -o /tmp/live-index.html
+          status=$(curl --silent --show-error --retry 3 --location \
+            --user-agent 'Mozilla/5.0 (compatible; PortfolioDeployment/1.0)' \
+            --write-out '%{http_code}' https://artaabdullahu.com/ -o /tmp/live-index.html)
+          if [ "$status" = 403 ]; then
+            echo "::warning::Hostinger denied the GitHub runner's public HTTP check. All uploaded files were verified over FTPS."
+            exit 0
+          fi
+          if [ "$status" != 200 ]; then
+            echo "::error::Public website returned HTTP $status"
+            exit 1
+          fi
           cmp dist/index.html /tmp/live-index.html

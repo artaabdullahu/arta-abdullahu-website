@@ -53,7 +53,7 @@ Production entry point: `dist/index.html`. Deploy the contents of `dist/` only. 
 
 The repository remote is `https://github.com/artaabdullahu/arta-abdullahu-website.git`. Every push to `main` runs `.github/workflows/deploy-hostinger.yml` and publishes the contents of `dist/` to Hostinger's `/public_html` folder. The workflow can also be run manually from GitHub Actions. Local edits go live after they are committed and pushed to `main`.
 
-The FTP password is stored in the encrypted GitHub repository secret `HOSTINGER_FTP_PASSWORD`. Update that secret if the FTP password changes. No password is stored in this repository. Deployment uses verified TLS for both authentication and file transfers, checks each uploaded file's SHA-256 hash, and publishes `index.html` after its assets. Existing remote files are retained; deleting a local file does not delete its remote copy. The workflow also checks that the public HTTPS homepage matches the deployed HTML.
+The FTP password is stored in the encrypted GitHub repository secret `HOSTINGER_FTP_PASSWORD`. Update that secret if the FTP password changes. No password is stored in this repository. Deployment uses verified TLS for both authentication and file transfers, checks each uploaded file's SHA-256 hash, and publishes `index.html` after its assets. Existing remote files are retained; deleting a local file does not delete its remote copy. The workflow also checks that the public HTTPS homepage matches the deployed HTML. Hostinger may deny the GitHub runner's HTTP request with 403; this produces a workflow warning, while the required FTPS file verification still runs. Other HTTP errors or an HTML mismatch fail deployment verification.
 
 ## Validation
 
