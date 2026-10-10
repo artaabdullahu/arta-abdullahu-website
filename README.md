@@ -7,6 +7,7 @@ Responsive one-page portfolio for Arta Abdullahu, Data Engineer and Technical Da
 - `dist/index.html`: page content, SEO metadata, and Person structured data.
 - `dist/styles.css`: responsive layout, pinned sidebar navigation, focus states, and reduced-motion support.
 - `dist/favicon.svg`: lightweight local favicon.
+- `dist/favicon.ico`: browser-compatible version of the same personal logo.
 - `archive/`: retained earlier website versions; excluded from the deployment directory.
 
 ## Local preview
