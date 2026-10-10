@@ -8,6 +8,7 @@ Responsive one-page portfolio for Arta Abdullahu, Data Engineer and Technical Da
 - `dist/styles.css`: responsive layout, pinned sidebar navigation, focus states, and reduced-motion support.
 - `dist/favicon.svg`: lightweight local favicon.
 - `dist/favicon.ico`: browser-compatible version of the same personal logo.
+- `dist/arta-logo.svg` and `dist/arta-logo.ico`: explicitly named tab icons that avoid previously cached Hostinger favicon URLs; the default favicon files remain as fallbacks.
 - `archive/`: retained earlier website versions; excluded from the deployment directory.
 
 ## Local preview
