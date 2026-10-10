@@ -51,7 +51,9 @@ Unconfirmed ELT, AWS Glue, Athena, EMR, Reveal, Logikcull, IPRO, and specific eD
 
 Production entry point: `dist/index.html`. Deploy the contents of `dist/` only. The canonical URL and Open Graph URL are set to `https://artaabdullahu.com/`, the intended domain; this does not configure hosting or DNS.
 
-The repository remote is `https://github.com/artaabdullahu/arta-abdullahu-website.git`. Committing or pushing does not automatically deploy this site. No configuration has been removed, and no build caches or temporary QA files belong in the repository.
+The repository remote is `https://github.com/artaabdullahu/arta-abdullahu-website.git`. Every push to `main` runs `.github/workflows/deploy-hostinger.yml` and publishes the contents of `dist/` to Hostinger's `/public_html` folder. The workflow can also be run manually from GitHub Actions. Local edits go live after they are committed and pushed to `main`.
+
+The FTP password is stored in the encrypted GitHub repository secret `HOSTINGER_FTP_PASSWORD`. Update that secret if the FTP password changes. No password is stored in this repository. Deployment uses verified TLS for both authentication and file transfers, checks each uploaded file's SHA-256 hash, and publishes `index.html` after its assets. Existing remote files are retained; deleting a local file does not delete its remote copy. The workflow also checks that the public HTTPS homepage matches the deployed HTML.
 
 ## Validation
 
