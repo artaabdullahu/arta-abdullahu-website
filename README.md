@@ -9,6 +9,7 @@ Responsive one-page portfolio for Arta Abdullahu, Data Engineer and Technical Da
 - `dist/favicon.svg`: lightweight local favicon.
 - `dist/favicon.ico`: browser-compatible version of the same personal logo.
 - `dist/arta-logo.svg` and `dist/arta-logo.ico`: explicitly named tab icons that avoid previously cached Hostinger favicon URLs; the default favicon files remain as fallbacks.
+- `dist/arta-tab-icon.png` and `dist/apple-touch-icon.png`: current tab and Apple touch icons, rendered from the same personal logo.
 - `archive/`: retained earlier website versions; excluded from the deployment directory.
 
 ## Local preview
