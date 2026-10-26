@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Arta Abdullahu | Data Engineer &amp; Technical Data Professional</title>
   <meta name="description" content="Arta Abdullahu is a data engineer based in Prishtina, Kosovo. Experience with Java, Python, SQL, Databricks, AWS, databases, and technical training.">
   <meta name="theme-color" content="#f5f4ee">
@@ -16,7 +16,7 @@
   <link rel="shortcut icon" href="/arta-tab-icon.png" type="image/png">
   <link rel="icon" href="/arta-tab-icon.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
-  <link rel="stylesheet" href="styles.css?v=mobile-nav-20261026">
+  <link rel="stylesheet" href="styles.css?v=mobile-nav-safari-20261026">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Arta Abdullahu", "url": "https://artaabdullahu.com/", "jobTitle": "Data Engineer and Technical Data Professional", "email": "mailto:abdullahuarta@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Prishtina", "addressCountry": "XK"}, "sameAs": ["https://linkedin.com/in/arta-abdullahu-814a85b0/", "https://github.com/artaabdullahu"]}</script>
 </head>
 <body>
@@ -142,8 +142,17 @@
     </div>
   </div>
   </main>
+  <nav class="mobile-nav" aria-label="Portfolio section navigation">
+    <a href="#about">About</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
   <script>
-    const sectionLinks = [...document.querySelectorAll('.sidebar nav a')];
+    const sectionLinks = [...document.querySelectorAll('.sidebar nav a, .mobile-nav a')];
     const sections = sectionLinks
       .map(link => document.querySelector(link.getAttribute('href')))
       .filter(Boolean);

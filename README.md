@@ -4,7 +4,7 @@ Responsive one-page portfolio for Arta Abdullahu, Data Engineer and Technical Da
 
 ## Files
 
-- `dist/index.html`: page content, SEO metadata, and Person structured data.
+- `dist/index.html`: page content, SEO metadata, Person structured data, and the standalone mobile navigation.
 - `dist/styles.css`: responsive layout, pinned desktop and mobile section navigation, focus states, and reduced-motion support. Its versioned URL in `index.html` forces browsers to fetch updated styles instead of reusing stale cached CSS.
 - `dist/favicon.svg`: lightweight local favicon.
 - `dist/favicon.ico`: browser-compatible version of the same personal logo.
@@ -72,7 +72,7 @@ Validation scripts, temporary browser profiles, and screenshots are kept outside
 
 ## Theme
 
-The current design uses an off-white paper background, ink-blue text, restrained teal accents, serif headings, and a custom inline SVG data-system diagram. The diagram connects databases and code to clickable Experience, Expertise, and Projects destinations. It is an illustrative toolkit map, not a claimed production architecture. Larger shortcut links support phone navigation. Desktop section navigation remains pinned; on phones, a fixed swipeable section bar keeps navigation within reach and highlights the section currently in view. Certificate records use an open layout with ruled dividers.
+The current design uses an off-white paper background, ink-blue text, restrained teal accents, serif headings, and a custom inline SVG data-system diagram. The diagram connects databases and code to clickable Experience, Expertise, and Projects destinations. It is an illustrative toolkit map, not a claimed production architecture. Larger shortcut links support phone navigation. Desktop section navigation remains pinned; on phones, a standalone fixed, swipeable section bar stays anchored to the viewport's bottom safe area and highlights the section currently in view. Certificate records use an open layout with ruled dividers.
 
 The design was implemented directly in HTML/CSS/SVG with a small inline script to highlight the current section, without a purchased theme, copied reference-site code, or external fonts. Visual exclusivity across the internet cannot be guaranteed. Reduced-motion preferences disable route animation. All seven professional content sections are unchanged; Languages and ISA Consulting remain removed.
 
