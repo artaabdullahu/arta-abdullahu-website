@@ -1,11 +1,11 @@
 # Arta Abdullahu - Professional Portfolio
 
-Responsive one-page portfolio for Arta Abdullahu, Data Engineer and Technical Data Professional. An original isometric portfolio atlas introduces the work, followed by a readable CV layout with pinned desktop section navigation and a single-column mobile layout. Deployable files are in `dist/`; no dependency installation or build is required.
+Responsive one-page portfolio for Arta Abdullahu, Data Engineer and Technical Data Professional. An original isometric portfolio atlas introduces the work, followed by a readable CV layout with pinned desktop section navigation and a single-column mobile layout. On phones, a fixed, horizontally scrollable section bar stays available while reading and marks the current section. Deployable files are in `dist/`; no dependency installation or build is required.
 
 ## Files
 
 - `dist/index.html`: page content, SEO metadata, and Person structured data.
-- `dist/styles.css`: responsive layout, pinned sidebar navigation, focus states, and reduced-motion support.
+- `dist/styles.css`: responsive layout, pinned desktop and mobile section navigation, focus states, and reduced-motion support.
 - `dist/favicon.svg`: lightweight local favicon.
 - `dist/favicon.ico`: browser-compatible version of the same personal logo.
 - `dist/arta-logo.svg` and `dist/arta-logo.ico`: explicitly named tab icons that avoid previously cached Hostinger favicon URLs; the default favicon files remain as fallbacks.
@@ -72,9 +72,9 @@ Validation scripts, temporary browser profiles, and screenshots are kept outside
 
 ## Theme
 
-The current design uses an off-white paper background, ink-blue text, restrained teal accents, serif headings, and a custom inline SVG data-system diagram. The diagram connects databases and code to clickable Experience, Expertise, and Projects destinations. It is an illustrative toolkit map, not a claimed production architecture. Larger shortcut links support phone navigation. Desktop section navigation remains pinned; certificate records use an open layout with ruled dividers.
+The current design uses an off-white paper background, ink-blue text, restrained teal accents, serif headings, and a custom inline SVG data-system diagram. The diagram connects databases and code to clickable Experience, Expertise, and Projects destinations. It is an illustrative toolkit map, not a claimed production architecture. Larger shortcut links support phone navigation. Desktop section navigation remains pinned; on phones, a fixed swipeable section bar keeps navigation within reach and highlights the section currently in view. Certificate records use an open layout with ruled dividers.
 
-The design was implemented directly in HTML/CSS/SVG for this repository, without a purchased theme, copied reference-site code, external fonts, or runtime JavaScript. Visual exclusivity across the internet cannot be guaranteed. Reduced-motion preferences disable route animation. All seven professional content sections are unchanged; Languages and ISA Consulting remain removed.
+The design was implemented directly in HTML/CSS/SVG with a small inline script to highlight the current section, without a purchased theme, copied reference-site code, or external fonts. Visual exclusivity across the internet cannot be guaranteed. Reduced-motion preferences disable route animation. All seven professional content sections are unchanged; Languages and ISA Consulting remain removed.
 
 Theme checks: HTML/SVG nesting, unique IDs, internal anchors, and exact preservation of the seven content sections passed. Chrome checks passed at 320, 390, 768, 1440, and 1920 px: no page overflow, all seven section links and three diagram links navigate correctly, reduced motion works, and keyboard Tab/Enter exposes visible focus and activates diagram links. Desktop/mobile screenshots were reviewed. The text palette and diagram labels meet 4.5:1 contrast. `git diff --check` passed. Files changed for this redesign: `dist/index.html`, `dist/styles.css`, `dist/favicon.svg`, and this README. Backups and QA artifacts are outside the repository. Changes have not been committed or pushed.
 
